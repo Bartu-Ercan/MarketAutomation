@@ -19,7 +19,6 @@ class Ui_MainWindow(object):
 "border:none;\n"
 "padding:0;\n"
 "margin:0;\n"
-"color:#fff;\n"
 "}\n"
 "\n"
 "#centralwidget,#mainbodyconcent{\n"
@@ -49,8 +48,14 @@ class Ui_MainWindow(object):
 "#statusBar{\n"
 "color:#0a0725\n"
 "}\n"
-"")
+"QMessageBox{\n"
+"font-color:#8a0002;\n"
+"color:#8a0002;\n"
+"}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("*{\n"
+"color:#fff\n"
+"}")
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
